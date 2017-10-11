@@ -1239,3 +1239,16 @@ html, body {
     height: 50px;
   }
 
+
+  /* Design Process Link on Homepage*/
+  .designProcess {
+    text-align: center;
+    display: table;
+    height: 25vh;
+    width: 100%;
+}
+
+.designProcess .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}

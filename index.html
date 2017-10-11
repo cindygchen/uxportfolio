@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Welcome to Cindy Chen's Portfolio! -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>devCircle</title>
+    <title>Cindy Chen's Portfolio</title>
     <link rel="icon" href="assets/img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-    <!--gallery thumbnail-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/gallery-clean.css">
-
     <!-- main css -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!--icons css -->
-    <link href="assets/fonts/et-line-font/et-line-font.css" rel="stylesheet">
-    
 
 
     <!-- modernizr -->
@@ -50,7 +42,7 @@
     <!-- end Preloader -->
 
     <div class="container-fluid">
-       <!-- box-header -->
+        <!-- box header -->
         <header class="box-header">
             <div class="box-logo">
                 <a href="index.html"><img src="assets/img/logo.png" width="150" alt="Logo"></a>
@@ -61,15 +53,15 @@
             </a>
             <!-- box-primary-nav-trigger -->
         </header>
-        <!-- end box-header -->
+        <!-- end box header -->
 
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
 
-                <li><a href="index.html"  >Home</a></li>
+                <li><a href="index.html" class="activeMenu" >Home</a></li>
                 <li><a href="process.html">Process</a></li>
-                <li><a href="index.html" class="activeMenu">Portfolio</a></li>
+                <li><a href="index.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>                
                 <li><a href="contact.html">Contact</a></li>
 
@@ -79,97 +71,130 @@
             </ul>
         </nav>
         <!-- end nav -->
-        
+
+        <!-- box-intro -->
+        <section class="box-intro">
+            <div class="table-cell">
+                <h1 class="box-headline letters rotate-2">
+                    <span class="box-words-wrapper">
+                        <b class="is-visible">designer.</b>
+                        <b>&nbsp; &nbsp; &nbsp; coder.</b>
+                    </span>
+		        </h1>
+                <h5>Hello I'm Cindy. Welcome to my portfolio.</h5>
+            </div>
+
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+        </section>
+        <!-- end box-intro -->
     </div>
 
-    <!-- top-bar -->
-    <div class="top-bar">
-        <h1>devCircle</h1>
-        <p><a href="#">Home</a> / <a href="#">portfolio</a> / divcircle </p>
+    <!-- portfolio div -->
+    <div class="portfolio-div">
+        <div class="portfolio">
+            <div class="no-padding portfolio_container">
+
+                <!-- Events -->
+                <div class="col-md-3 col-sm-6">
+                    <a href="events.html" class="portfolio_item">
+                        <img src="assets/img/gmc/gmcthumbnail.png" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Events.com</span>
+                                    <em>Event Registration Web Application</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Events -->
+
+                <!-- devCircle -->
+                <div class="col-md-3 col-sm-6">
+                    <a href="devcircle.html" class="portfolio_item">
+                        <img src="assets/img/devcircle2.gif" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>devCircle</span>
+                                    <em>Web Design & Development</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- devCircle -->
+
+                <!-- PSE -->
+                <div class="col-md-6 col-sm-12">
+                    <a href="pacificscience.html" class="portfolio_item">
+                        <img src="assets/img/pse/ta2.png " alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Pacific Science & Engineering</span>
+                                    <em>Web Design</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- PSE -->
+
+                <!-- Beach Bum -->
+                <div class="col-md-3 col-sm-6">
+                    <a href="beachbum.html" class="portfolio_item">
+                        <img src="assets/img/bb.png" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Beach Bum</span>
+                                    <em>Mobile Application</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Beach Bum -->
+
+                <!-- PBC-->
+                <div class="col-md-3 col-sm-6">
+                    <a href="pacificbrewingco.html" class="portfolio_item">
+                        <img src="assets/img/pbc.gif" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Pacific Brewing Company</span>
+                                    <em>Web Application</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- PBC -->
+            </div>
+            <!-- end portfolio_container -->
+            <section class="designProcess">
+                <div class="table-cell activeMenu">
+                    <h2><a href="process.html">View My Design Process</a></h2>
+                </div>
+    
+                <div class="mouse">
+                    <div class="scroll"></div>
+                </div>
+            </section>
+        </div>
+        <!-- portfolio -->
     </div>
-    <!-- end top-bar -->
-
-    <!-- main-container -->
-    <div class="container main-container">
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-uppercase">devCircle</h3>
-            <h5>UX Designer & Front-End Developer</h5>
-            <div class="h-30"></div>
-        </div>
-        
-        <div class="col-md-10 col-md-offset-1">
-            <p>devCircle is a project that I created while taking my full stack coding bootcamp at UC San Diego. DevCircle is a web application that helps bootcamp students practice the technologies they’ve learned in school as well as keep up with new technologies by collaborating with their peers on group projects.</p>
-            <p>I had the opportunity to utilize my UX skills with this project as well as practice my newly developed coding skills</p>
-            <ul class="cat-ul">
-
-                <li><i class="ion-ios-circle-filled"></i></span>Created user task flows, IA, sketches and styleguides</li>
-                <li><i class="ion-ios-circle-filled"></i>Created all visual elements including logos, graphics, style guides, etc</li>
-                <li><i class="ion-ios-circle-filled"></i>Developed front-end components and pages</li>
-
-            </ul>
-            <div class="h-60"></div>
-            <hr>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-uppercase">Project: devCircle</h3>                
-            <img src="assets/img/dev/devcircle.gif" alt="" class="img-responsive img-fluid" />
-            <div class="h-30"></div>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-uppercase">User Flows</h3>                
-            <img src="assets/img/dev/taskflow.png" alt="" class="img-responsive img-fluid" />
-            <div class="h-30"></div>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-uppercase">Sketches & Mockups</h3>
-        </div>
-
-        <div class="tz-gallery col-md-10 col-md-offset-1">
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                        <img src="assets/img/dev/dev1.jpeg">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                        <img src="assets/img/dev/dev2.jpeg">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                        <img src="assets/img/dev/dev3.jpeg">
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-uppercase">Styleguide</h3>                
-            <img src="assets/img/dev/sg.png" alt="" class="img-responsive img-fluid" />
-            <div class="h-30"></div>
-        </div>
-
-        <div class="h-30"></div>        
-
-        <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-uppercase">The Result</h3>
-            <div class="h-30"></div>
-            <h5>
-                <a href="https://devcircle.herokuapp.com">Live Demo</a>
-            </h5>
-        </div>
-
-    </div>
-
-    <!-- end main-container -->
-
+    <!-- end portfolio div -->
 
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright"> CINDY G CHEN © 2017</p>
+                <p class="copyright">CINDY G CHEN © 2017</p>
         </div>
     </footer>
     <!-- end footer -->
@@ -179,8 +204,6 @@
     <!-- end back to top -->
 
 
-
-
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.1.js"></script>
     <!--  plugins -->
@@ -188,10 +211,6 @@
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/animated-headline.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
 
 
     <!--  custom script -->
