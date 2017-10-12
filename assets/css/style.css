@@ -954,11 +954,11 @@ footer img {
     color: #888;
 }
 
-/* .aboutImg {
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-} */
+
+h3.about-text {
+    opacity: 0.84;
+    font-size: 20px;
+}
 
 
 /* Services page
