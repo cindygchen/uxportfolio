@@ -1250,6 +1250,17 @@ textarea:focus {
     text-align: center;
 }
 
+.top-bar-mobile {
+    color: #333;
+    padding: 150px 0 150px;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/mobile/lytxbackground.png);
+    background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/mobile/lytxbackground.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    text-align: center;
+}
+
 .top-bar-dev {
     color: #333;
     padding: 150px 0 150px;
@@ -1286,7 +1297,7 @@ html, body {
   }
   .wrapper {
     min-height: 100%;
-  
+
     /* Equal to height of footer */
     /* But also accounting for potential margin-bottom of last child */
     margin-bottom: -50px;

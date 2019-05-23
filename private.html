@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Under Construction</title>
+    <link rel="icon" href="assets/img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="assets/js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="index.html"><img src="assets/img/logo.png" width="150" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+        </header>
+        <!-- end box-header -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html" class="activeMenu">About</a></li>
+                <li class="box-social"><a href="http://www.linkedin.com/in/cindygchen"><i class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="http://www.instagram.com/cindygchen"><i class="ion-social-instagram-outline"></i></a></li>
+
+            </ul>
+        </nav>
+        <!-- end nav -->
+
+        <div class="container main-container">
+            <div class="clearfix">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Under Construction</h3>
+                    <p>Password:</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="loginbutton">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/animated-headline.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+    <!--  custom script -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- password protection -->
+    <script type="text/javascript">
+        "use strict";
+        function loadPage(pwd) {
+
+            var hash = Sha1.hash(pwd);
+            var url = hash + "/mobileready.html";
+
+            $.ajax({
+                url : url,
+                dataType : "html",
+                success : function(data) {
+
+                    window.location = url;
+
+                },
+                error : function(xhr, ajaxOptions, thrownError) {
+
+                    parent.location.hash = hash;
+
+                    $("#password").attr("placeholder","wrong password");
+                    $("#password").val("");
+                }
+            });
+        }
+
+        $("#loginbutton").on("click", function(e) {
+            e.preventDefault()
+            loadPage($("#password").val());
+        });
+
+        $("#password").keypress(function(e) {
+            if (e.which == 13) {
+                loadPage($("#password").val());
+            }
+        });
+
+        $("#password").focus();
+
+    </script>
+
+</body>
+
+</html>
